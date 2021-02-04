@@ -3,10 +3,12 @@
 :root{
     --app-container: #f3f6fd;
     --main-color:#142d66 ;
+    --secondary-color: #5d77b4;
     --link-color: #1f1c2e;
-    --link-color-hover: #c3cff4;
+    --link-color-hover: #1f3474;
     --link-color-active: #fff;
     --link-color-active-bg: #1f1c2e;
+    --app-shelf: #ffffff;
 }
 
 *{
@@ -159,3 +161,52 @@ span {
     background-color: var(--link-color-hover);
       color: var(--link-color-active);
 }
+.app-shelf{
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    flex: 1 100%;
+    height: 100%;
+    overflow: hidden;
+    padding: 32px 32px 0 32px;
+    background: var(--app-shelf);
+    margin-right: 5%;
+}   .app-shelf p {
+        margin: 0;
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 700;
+        color: var(--main-color);
+    }  p.small {
+            color: var(--secondary-color) ;
+            font-size: 20px;
+        }
+.shelf-grid{
+    margin-top: 20px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    display: flex;
+    margin-right: 16px;
+    border-bottom: var(--main-color) 1px solid;
+    margin-bottom: 20px;
+}.shelf-grid::-webkit-scrollbar{
+    height: 5px;
+
+}.shelf-grid::-webkit-scrollbar-track{
+   
+}.shelf-grid::-webkit-scrollbar-thumb{
+    background-color: var(--main-color);
+    border-radius: 80px;
+    
+}
+.shelf-grid-wrapper{
+    margin-right: 15px;
+    padding-bottom: 20px;
+}   .shelf-grid-wrapper img{
+        position: relative;
+        border-radius: 5px;
+        height: 200px;
+        width: 150px;
+    }   .shelf-grid-details{
+            
+        }
