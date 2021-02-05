@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library APP</title>
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="icon" href="../resources/book.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="src/View/css/main.css">
+    <link rel="icon" href="assets/book.svg" type="image/svg+xml">
 </head>
 <body>
     <div class="app-container">
@@ -26,7 +26,7 @@
             </div>
                 <div class="app-header-right">
                     <button class="profile-btn">
-                        <img src="../resources/ProfileCV.jpg"/>
+                        <img src="assets/ProfileCV.jpg"/>
                         <span>Okita H.</span>
                       </button>
                 </div>
@@ -64,16 +64,16 @@
                 </div>
                 <div class="shelf-grid">
                     <div class="shelf-grid-wrapper">
-                        <img src="../resources/re-zer_cover.jpg" alt="">
+                        <img src="assets/re-zer_cover.jpg" alt="">
                         <div class="shelf-grid-details">
                             
                         </div>
                     </div>
                     <div class="shelf-grid-wrapper">
-                        <img src="../resources/kagerou_days_cover.jpg" alt="">
+                        <img src="assets/kagerou_days_cover.jpg" alt="">
                     </div>
                     <div class="shelf-grid-wrapper">
-                        <img src="../resources/tate_cover.jpg" alt="">
+                        <img src="assets/tate_cover.jpg" alt="">
                     </div>
                   
                 </div>
@@ -82,28 +82,28 @@
                 </div>
                 <div class="shelf-grid">
                     <div class="shelf-grid-wrapper">
-                        <img src="../resources/re-zer_cover.jpg" alt="">
+                        <img src="assets/re-zer_cover.jpg" alt="">
                         <div class="shelf-grid-details">
                             
                         </div>
                     </div>
                     <div class="shelf-grid-wrapper">
-                        <img src="../resources/kagerou_days_cover.jpg" alt="">
+                        <img src="assets/kagerou_days_cover.jpg" alt="">
                     </div>
                     <div class="shelf-grid-wrapper">
-                        <img src="../resources/tate_cover.jpg" alt="">
+                        <img src="assets/tate_cover.jpg" alt="">
                     </div>
                     <div class="shelf-grid-wrapper">
-                        <img src="../resources/coraline_cover.jpg" alt="">
+                        <img src="assets/coraline_cover.jpg" alt="">
                     </div>
                     <div class="shelf-grid-wrapper">
-                        <img src="../resources/heart_cover.jpg" alt="">
+                        <img src="assets/heart_cover.jpg" alt="">
                     </div>
                     <div class="shelf-grid-wrapper">
-                        <img src="../resources/littlePrince_cover.jpg" alt="">
+                        <img src="assets/littlePrince_cover.jpg" alt="">
                     </div>
                     <div class="shelf-grid-wrapper">
-                        <img src="../resources/clt_cover.jpg" alt="">
+                        <img src="assets/clt_cover.jpg" alt="">
                     </div>
                 </div>
             </div>

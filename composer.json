@@ -1,0 +1,26 @@
+{
+    "name": "rodrigo/virtuallibrary",
+    "description": "virtual library app",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Src\\": "src/"
+        },
+        "files": [
+            "src/Config/config.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Rodrigo Elias",
+            "email": "rodrigo.e2003@gmail.com"
+        }
+    ],
+    "require": {
+        "league/route": "5.0.x",
+        "league/plates": "3.*",
+        "laminas/laminas-diactoros": "^2.5",
+        "laminas/laminas-httphandlerrunner": "^1.3"
+    }
+}
