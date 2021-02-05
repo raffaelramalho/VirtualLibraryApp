@@ -57,6 +57,7 @@
                   </svg>
                 </a>
               </div>
+<<<<<<< HEAD:src/View/UI/userHome.php
             <div class="app-shelf">
                 <div class="app-shelf-header">
                     <p>My Books</p>
@@ -104,10 +105,62 @@
                     </div>
                     <div class="shelf-grid-wrapper">
                         <img src="assets/clt_cover.jpg" alt="">
+=======
+            <div class="app-shelf-main">
+                <div class="app-shelf">
+                    <div class="app-shelf-header">
+                        <p>My Books</p>
+                        <p class="small">Following</p>
+                    </div>
+                    <div class="shelf-grid">
+                        <div class="shelf-grid-wrapper">
+                            <img src="../resources/re-zer_cover.jpg" alt="">
+                            <div class="shelf-grid-details">
+                                
+                            </div>
+                        </div>
+                        <div class="shelf-grid-wrapper">
+                            <img src="../resources/kagerou_days_cover.jpg" alt="">
+                        </div>
+                        <div class="shelf-grid-wrapper">
+                            <img src="../resources/tate_cover.jpg" alt="">
+                        </div>
+                        <div class="shelf-grid-wrapper">
+                            <img src="../resources/coraline_cover.jpg" alt="">
+                        </div>
+                        <div class="shelf-grid-wrapper">
+                            <img src="../resources/heart_cover.jpg" alt="">
+                        </div>
+                        <div class="shelf-grid-wrapper">
+                            <img src="../resources/littlePrince_cover.jpg" alt="">
+                        </div>
+                        <div class="shelf-grid-wrapper">
+                            <img src="../resources/clt_cover.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="app-shelf">
+                    <div class="app-shelf-header">
+                        <p>My Books</p>
+                        <p class="small">Favorites</p>
+                    </div>
+                    <div class="shelf-grid">
+                        <div class="shelf-grid-wrapper">
+                            <img src="../resources/re-zer_cover.jpg" alt="">
+                            <div class="shelf-grid-details">
+                                
+                            </div>
+                        </div>
+                        <div class="shelf-grid-wrapper">
+                            <img src="../resources/kagerou_days_cover.jpg" alt="">
+                        </div>
+                        <div class="shelf-grid-wrapper">
+                            <img src="../resources/tate_cover.jpg" alt="">
+                        </div>
+>>>>>>> 29b4678e77e00e1a32998968ed50e37350908f05:home/index.html
                     </div>
                 </div>
             </div>
-            
         </div>
     </div>
 </body>
