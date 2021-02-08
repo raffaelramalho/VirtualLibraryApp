@@ -49,6 +49,8 @@ button, a{
     background: var(--app-container);
     padding: 16px 24px;
     color: var(--main-color);
+    /* mobile */
+    min-width: 520px; 
 }   .app-header-left,.app-header-right{
         display: flex;
     
@@ -56,6 +58,9 @@ button, a{
     }   .app-header-left{
             flex-grow: 1;
         }
+.app-header-left {
+    
+}
 .app-header-left p{
     font-size: 24px;
       line-height: 32px;
@@ -63,6 +68,20 @@ button, a{
       opacity: .9;
       margin: 0;
       color: var(--main-color);
+      
+}.app-header-left button{
+    background-color: inherit;
+    margin: 0;
+    padding: 0;
+    border: none;
+    visibility: hidden;
+    margin-right: 5%;
+}
+.app-header-left i{
+    
+    padding-right: 5%;
+    padding-left: 7px;
+    
 }
 .search-wrapper{
     border-radius: 10px;
@@ -135,6 +154,21 @@ span {
     line-height: 24px;
     font-weight: 700;
 }
+.app-mobile-btn{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--secondary-color);
+    height:  0  ;
+    margin: 0;
+    border: none;
+    transition: height 2s;
+    
+    
+}.app-mobile-btn a{
+    color: var(--main-color);
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
 .app-content{
     display: flex;
    
@@ -173,7 +207,9 @@ span {
     display: flex;
     flex-direction: column;
     flex: 1 100%;
+    width: 70%;
     height: 100%;
+    margin-right: 20px;
     margin-bottom: 3%;
     padding: 32px 32px 0 32px;
     background: var(--app-shelf);
@@ -225,3 +261,40 @@ span {
         opacity: 0.8;
         margin-bottom: 0px;
         }
+
+@media screen and (max-width:500px){
+    *{
+        box-sizing: unset;
+        
+    }
+    body{
+        overflow:hidden;
+        overflow-y: hidden;
+    }
+    .app-header-left button {
+        visibility: visible;
+    }
+    .search-wrapper{
+        display: none;
+    }
+    .app-header-left{
+        flex: 1;
+    }
+    .app-header-right{
+        flex: 1;
+    }.app-header-right span{
+        display: none;
+    }
+    .app-sidebar{
+        display: none;
+    }
+    .app-container{
+        width: 100%;
+    }
+    .app-content{
+        width: 100%;
+    }
+    .app-shelf{
+        width: 100%;
+    }
+}
