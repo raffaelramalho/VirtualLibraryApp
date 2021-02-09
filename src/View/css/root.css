@@ -1,0 +1,10 @@
+:root{
+    --app-container: #f3f6fd;
+    --main-color:#142d66 ;
+    --secondary-color: #5d77b4;
+    --link-color: #1f1c2e;
+    --link-color-hover: #1f3474;
+    --link-color-active: #fff;
+    --link-color-active-bg: #1f1c2e;
+    --app-shelf: #ffffff;
+}

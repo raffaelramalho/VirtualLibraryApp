@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Librarium</title>
     <link rel="stylesheet" href="src/View/css/main.css">
+    <link rel="stylesheet" href="src/View/css/root.css">
     <link rel="icon" href="assets/book.svg" type="image/svg+xml">
     <script src="https://kit.fontawesome.com/84f133515c.js" crossorigin="anonymous"></script>
 </head>

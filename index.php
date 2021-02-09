@@ -15,6 +15,8 @@ $router = new Router();
 $emitter = new SapiEmitter();
 
 $router->get("/", "Src\Controller\UserController::home");
+$router->get("/login", "Src\Controller\UserController::login");
+$router->get("/register", "Src\Controller\UserController::register");
 
 $response = $router->dispatch($request);
 $emitter->emit($response);

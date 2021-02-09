@@ -1,0 +1,138 @@
+html,body{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+}
+body{
+    font-family: 'DM Sans', sans-serif;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    
+    background: linear-gradient(270deg, #3b6bff, #91e1ff);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+}
+.link-form{
+    padding-bottom: 5px;
+    color: var(--link-color);
+    text-align: center;
+} .link-form:hover{
+    color: var(--link-color-hover);
+}
+.app{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.app-form{
+    width: 20%;
+    backdrop-filter: blur(5px);
+    background: #ffffffd3;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+h1{
+    text-align: center;
+    color: var(--main-color);
+}
+.app-form-control{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    
+    
+}
+.app-form-control-btn{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: center;
+}
+.app-form-control label{
+    color: var(--secondary-color);
+    cursor: pointer;
+    margin-left: 8px;
+}
+.app-form-control input{
+    height: 35px;
+    border-radius: 10px;
+    outline: none;
+    padding-left: 15px;
+    border: solid var(--main-color) 1px;
+}
+.link-btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+    height: 35px;
+    background: var(--main-color);
+    color: var(--app-shelf);
+    border: none;
+    font-weight: bolder;
+    border-radius: 10px;
+    font-size:13px;
+    width: 50%;
+    transition: ease-in .2s;
+}   .link-btn:focus{
+    background: var(--link-color);
+} .link-btn:hover{
+    background: var(--link-color);
+}
+.app-form-control button {
+    cursor: pointer;
+    background:transparent;
+    color: var(--main-color);
+    font-weight: bolder;
+    border-radius: 10px;
+    border: solid  var(--main-color) 1px;
+    height: 35px;
+    outline: none;
+    transition: ease-in .2s;
+    margin-right: 10px;
+    width: 50%;
+} .app-form-control button:focus{
+    background: var(--secondary-color);
+} .app-form-control button:hover{
+    background: var(--main-color);
+    color:  var(--app-shelf) ;
+}
+@media screen and (max-width:1500px){
+    .app-form{
+        width: 50%;
+    }
+}
+@media screen and (max-width:600px){
+    body{
+        background: var(--app-shelf);
+    }
+    .app-form{
+        width: 100%;
+    }
+    .app-form-control input{
+        height: 50px;
+        font-size: 20px;
+    }
+}
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}

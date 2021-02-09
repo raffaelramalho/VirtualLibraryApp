@@ -21,4 +21,20 @@ class UserController extends Controller{
         
         return $response;
     }
+    public function login(ServerRequestInterface $request): ResponseInterface
+    {
+        $response = new Response();
+        $renderedTemplate = $this->view->render('userLogin');
+        $response->getBody()->write($renderedTemplate);
+
+        return $response;
+    }
+    public function register(ServerRequestInterface $request): ResponseInterface
+    {
+        $response = new Response();
+        $renderedTemplate = $this->view->render('userRegister');
+        $response->getBody()->write($renderedTemplate);
+
+        return $response;
+    }
 }
