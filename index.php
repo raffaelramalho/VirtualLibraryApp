@@ -1,23 +1,19 @@
 <?php
+
 require __DIR__ . "/vendor/autoload.php";
 
-use League\Route\Router;
-use Laminas\Diactoros\ServerRequestFactory;
-use Laminas\HttpHandlerRunner\Emitter\SapiEmitter;
+$container = require __DIR__."/src/container.php";
+$router = require __DIR__."/src/router.php";
 
-$uri = '/LibraryApp';
-$_SERVER['REQUEST_URI'] = substr($_SERVER['REQUEST_URI'], (strlen($uri)));
+$request = $container->get("Laminas\Diactoros\Response");
+$emitter = $container->get("Laminas\HttpHandlerRunner\Emitter\SapiEmitter");
 
-$request = ServerRequestFactory::fromGlobals(
-    $_SERVER, $_GET, $_POST, $_COOKIE, $_FILES
+$response = $router->dispatch(
+    $container->get('Laminas\Diactoros\ServerRequest'),
+    $container->get('Laminas\Diactoros\Response')
 );
-$router = new Router();
-$emitter = new SapiEmitter();
 
-$router->get("/", "Src\Controller\UserController::home");
-$router->get("/login", "Src\Controller\UserController::login");
-$router->get("/register", "Src\Controller\UserController::register");
-
-$response = $router->dispatch($request);
 $emitter->emit($response);
+
+
 

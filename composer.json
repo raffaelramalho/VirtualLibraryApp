@@ -21,6 +21,7 @@
         "league/route": "5.0.x",
         "league/plates": "3.*",
         "laminas/laminas-diactoros": "^2.5",
-        "laminas/laminas-httphandlerrunner": "^1.3"
+        "laminas/laminas-httphandlerrunner": "^1.3",
+        "league/container": "^3.3"
     }
 }
